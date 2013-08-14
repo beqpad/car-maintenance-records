@@ -2,7 +2,7 @@ DROP TABLE [User];
 DROP TABLE [AuthenticationInfo];
 DROP TABLE [SecurityToken];
 DROP TABLE [Mechanic];
-DROP TABLE [ServiceStation};
+DROP TABLE [ServiceStation];
 DROP TABLE [Tenant];
 DROP TABLE [Machine];
 DROP TABLE [RegularlyCheckRecord];
@@ -84,7 +84,7 @@ CREATE TABLE [ServiceStation] (
   [Address]           NVARCHAR(20),
   [PhoneNumber]       NVARCHAR(20),
   [FaxNumber]         NVARCHAR(20),
-  [ChargeUserID]      BIGINT NOT NUL,
+  [ChargeUserID]      BIGINT NOT NULL,
 
   [CreatedDateTime]   DATETIME2,
   [UpdatedDateTime]   DATETIME2,
